@@ -1,10 +1,12 @@
 import PySimpleGUI as sg
 from time import time
 
+cross = b'iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAACwElEQVR4nO2YP2gUURDGf5OchkSx8w8iGkFQDIK6t4UgmtbA7VVprERC1EYE7RRB0MoqjQpBUlkFhOxZKFgoNmL2BIVoYRFFJKKl0RCjjkWiibnbN+9t4Gwy1d2bme/7+Obd3tsHq7GykFaSabV8EeUqMEXHTLeMTny3elomUJPyNLCuSWZI0vq5vL5cgZqUdbFKTsrY+MgKxD0CjrpqJM2aamm6qH0HdlBqf9scSbbL2Ph7b3H9hzqZnftmFzIgtey2l0BY5mBjfJY02+Ql0I2zKCTHwTYH9CsH3kZNyl8tUq1GZ01lAKpN9uZ85AqUtN5jwHZppXzLTSxDBgagw1Kr524Bh4MA+sGZFk7ldlbiO4ayeYi0PujKOwVKWt9mEeTuMdHjVm/evlsahoOAcMkq0eTgrn+/l1+auCXdatbgIVDGsmseMG+WLewzUD/J3fqUjevjIH6j0Ep8AvweK5KOb/bhBU+BC7AP3Gkd0aT81IRpb9vtzxn4X+z70HUSekxjaQQ4CHTsLAXVL4tQcRAoUEZHfwKToSQLYf+ym3EWaSoy6iLuQeiI/4aeD2x4WIxnBQfWEBeLugeFHWxdtESgVqI9RXsLCdQkPhLUIPK6CA8U/5E8Du5I4htFmIIFaiU6XIQI9EyRrnAHRZ4UIYJiz88ggZpEE6EEDRjV+HJIvbdA7e0tgex1Fv1q249ScwPpFV9OCHFww/ScUfFc7j17IbUsAZxvfCGj9hKoSZxZNZJm0ZLP603ManTdh9sUqIPRGtDIKLvfsJJmbmyVCxY3+Dj4UewbqDQ71rAGCjrs6vMZtVOgVqMBCwCYyUtY77wA2t/j3A7WGJwOzIvIuoy8+yQz2/nFlbZuFlz3MwA/jPwCTP7dC/zZ583D65ymSTQJ0t3QHHDO0754CyV9B6wNwQl9q7sJnA4Vtxr/M34DYiDT2TtHLPgAAAAASUVORK5CYII='
+
 def create_window():
 	sg.theme('black')
 	layout = [
-		[sg.Push(), sg.Image('cross.png', pad = 0, enable_events = True, key = '-CLOSE-')],
+		[sg.Push(), sg.Image(cross, pad = 0, enable_events = True, key = '-CLOSE-')],
 		[sg.VPush()],
 		[sg.Text('', font = 'Young 50', key = '-TIME-')],
 		[
