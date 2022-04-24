@@ -18,7 +18,7 @@ Created to experiment with the PySimple GUI library. A collection of simple one 
 Converts along 3 categories: Mass, Length and Time. Able to convert both ways (e.g kg to pounds and pounds to kg). Easily expandable to more units.
 ![conv](screens/converter.png)
 ### Stopwatch 
-Able to lap, stop and reset. Potential errors with cross.png file, resave image if this occurs. 
+Able to lap, stop and reset.
 ![swatch](screens/stopwatch.png)
 ### Calculator 
 ![calc](screens/calc.png)
